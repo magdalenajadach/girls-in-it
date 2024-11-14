@@ -27,11 +27,11 @@ export default function Home() {
     };
 
     fetchArticles();
-  }, []);
+  }, [apiKey]);
 
   return (
     <div>
-      <h1>Women's Success in Sports</h1>
+      <h1>Women&apos;s Success in Sports</h1>
       {error && <p>Error: {error}</p>}
       {articles.length > 0 ? (
         <div>
